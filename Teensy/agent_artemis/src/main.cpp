@@ -114,7 +114,7 @@ void loop()
         packet.header.dest = temp_node;
         packet.header.type = PacketComm::TypeId::DataPong;
         packet.data.resize(0);
-        data = "Pong";
+        data = "Pongs";
         for (size_t i = 0; i < strlen(data); i++)
         {
           packet.data.push_back(data[i]);
